@@ -1068,7 +1068,7 @@ background: #A17478;
 .sectionParallax{
     width: 100%;
     height: 250px;
-    background: url(./ressources/comete.jpg) no-repeat center / cover fixed;
+    background: url(./ressources/visageParallax.jpg) no-repeat center / cover fixed;
     display:flex ;
     align-items: center;
     justify-content: center;
