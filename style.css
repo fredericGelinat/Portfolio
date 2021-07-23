@@ -910,3 +910,300 @@ padding-left: 0;
          width: 300px;
      }    
 }
+
+/* section epérienc euniversité*/
+.travailExp{
+    width: calc(100% - 300px);
+    height: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+}
+.titreTravailExp{
+    text-align: center;
+    margin: 70px 0;
+    font-size: 80px;
+    color: white;
+}
+.contExpTravail{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.barreVerticale{
+    height: 1000px;
+    width: 5px;
+    background: #F2B3BF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: -30px;
+
+}
+.bouleIco{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #FFD5D8;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bouleIco img{
+    width: 25px;
+}
+.flexContBlocExp{
+    width: 800px;
+    flex-shrink: 1;
+    height: 1000px;
+    position: relative;
+}
+.bloc{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 37.5px;
+    cursor: pointer;
+    border: 5px solid #DAA8AB;
+    position: relative;
+    font-family: 'Xanh Mono', monospace;
+}
+.contenuBloc{
+    padding:20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #F2B3BF;
+    background-image: linear-gradient(to right, #FFD5D8, #F2B3BF);
+    ;
+    transition: transform 0.25s ease-in-out;
+    transform: translate(10px, -10px);
+    color: rgb(240, 76, 26);
+    font-size: large;
+}
+.contenuBloc:hover{
+    transform: translate(0, 0);
+}
+.bloc1{
+background: #A17478;
+}
+.bloc2{
+    background: #DAA8AB;
+}
+.bloc3{
+    background: #816460;
+}
+.bloc4{
+    background: #FFD5D8;
+}
+
+.titreSectionBloc{
+    font-family: 'Xanh Mono', monospace;   
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: rgb(121, 114, 212);
+}
+/* media section université*/
+@media screen and (max-width: 1300px) {
+    .travailExp{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .barreVerticale{
+        height: 1200px;
+    }
+  .bloc{
+      height: 250px;
+      margin-bottom: 37.5px;
+  }  
+  .barreVerticale{
+      margin-left: 60px;
+
+  }
+  .flexContBlocExp{
+      margin-right: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+    .txtSection{
+        font-size: 16px;
+    }
+    .bloc{
+        height: 400px;
+    }
+    .barreVerticale{
+        height: 1800px;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .titreTravailExp{
+        font-size: 60px;
+    }
+    
+}
+@media screen and (max-width: 380px) {
+    .txtSection{
+        font-size: 15px;
+    }
+    .bloc{
+        height: 400px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .txtSection{
+        font-size: 15px;
+    }
+    .bloc{
+        height: 300px;
+        width: 100%;
+    } .barreVerticale{
+        display: none;
+    }
+
+}
+/* section parallax*/
+.sectionParallax{
+    width: 100%;
+    height: 250px;
+    background: url(./ressources/comete.jpg) no-repeat center / cover fixed;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px dashed #F2B3BF;
+    border-bottom: 1px dashed #BF7D2C ;    
+}
+.txtPar{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 50px;
+}
+.txtPar:nth-child(1){
+    padding-left: 300px;
+}
+@media screen and (max-width: 1300px) {
+    .txtPar{
+        font-size: 25px;
+        margin: 0 30px;
+    }
+    .txtPar:nth-child(1){
+    padding-left: 0px;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    .txtPar{
+        font-size: 22px;
+        margin: 0 25px;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .sectionParallax{
+        flex-direction: column;
+    }
+    .txtPar{
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+    
+}
+/* section contact*/
+.sectionContact{
+    width: 100%;
+    height: auto;
+    background-color: #A17478;
+    padding-left: 300px;
+}
+.sectionContact h2{
+    text-align: center;
+    color: #F2B3BF;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    padding: 70px 0 0 300px;
+}
+.sectionContact h2 strong{
+    font-weight: 900;
+    color: rgb(69, 197, 219);
+}
+.containerForme{
+    margin: 0 auto;
+    width: 70%;
+    padding-left: 300px;
+}
+.formGroupe{
+    position: relative;
+    display: flex;
+    margin-bottom: 45px;
+}
+.formGroupe label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #FFD5D8;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+.formGroupe input{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #816460;
+    color: #f7edee;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+
+}
+input::placeholder{
+    color: rgb(231, 226, 236);
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    border: none;
+    border: 3px solid #F2B3BF;
+    border-radius: 3px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s all ease-out;
+    background: #ECB2B0;
+}
+textarea::placeholder{
+    font-size: 20px;
+    opacity: 0.5;
+}
+textarea:focus{
+    border-color: rgb(121, 114, 212);
+
+}
+.formGroupe:nth-child(4){
+    margin-bottom: 25px;
+    justify-content: flex-start;
+}
+.formGroupe .buttonSub{
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid #339cd8;
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, #F2B3BF 50%, #ECB2B0);
+    background-size: 200%;
+    color: aquamarine;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.formGroupe .buttonSub:hover{
+    color: blue;
+    background-position:100% ;
+    border: 3px solid #cf5151 ;
+}
