@@ -23,7 +23,7 @@ body{
     background: #D9A0A0;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -300px;
     border-right: 10px dashed #0D0D0D;
     z-index: 5;
     transition: all 0.2s ease-in-out;
@@ -449,7 +449,7 @@ h1{
     
 }
 /*     section présentation   */
-.presentation{
+#presentation{
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -1115,7 +1115,7 @@ background: #A17478;
     width: 100%;
     height: auto;
     background-color: #A17478;
-    padding-left: 300px;
+   
 }
 .sectionContact h2{
     text-align: center;
@@ -1129,7 +1129,7 @@ background: #A17478;
     font-weight: 900;
     color: rgb(69, 197, 219);
 }
-.containerForme{
+.containerForm{
     margin: 0 auto;
     width: 70%;
     padding-left: 300px;
@@ -1206,4 +1206,44 @@ textarea:focus{
     color: blue;
     background-position:100% ;
     border: 3px solid #cf5151 ;
+}
+
+@media screen and (max-width: 1300px) {
+    .sectionContact h2 {
+        padding: 70px 0 0 0;
+    }
+    .containerForm{
+        padding-left: 0;
+    }
+    .formGroupe:nth-child(4){
+        justify-content: center;
+    }
+}
+/* animation contact*/
+
+.formGroupe:focus-within label,
+.formGroupe.animation label{
+    top: 0px;
+    transform: translateY(-100%);
+    color: #44a2ce;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 300px;
+    background-color: #A17478;
+    
+}
+footer p{
+    color: #DEDEDE;
+    font-size: xx-large;
+}
+@media screen and (max-width: 1300px) {
+    footer {
+        padding-left: 0px;
+    }
 }
